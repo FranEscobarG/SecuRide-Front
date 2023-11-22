@@ -1,0 +1,131 @@
+.container-dashboard{
+    width: 100%;
+    padding: 1rem 2rem;
+    /* height: 100vh; */
+}
+
+.cards{
+    display: flex;
+    gap: 1.6rem;
+}
+
+.parent-container{
+    width: 100%;
+}
+
+.parent-container .compactCard{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    height: 10.4rem!important;
+    padding: 0 1.2rem;
+    border-radius: 0.7rem;
+    position: relative;
+    cursor: pointer;
+}
+.parent-container .compactCard.Velocidad:hover,
+.parent-container .compactCard.Distancia:hover,
+.parent-container .compactCard.Calorias:hover {
+    box-shadow: none;
+}
+
+.parent-container .compactCard.Velocidad{
+    background: rgba(225, 8, 59, 0.82); /* Rojo oscuro */
+    box-shadow: 0 2px 4px rgba(255, 8, 66, 0.2), 0 4px 6px rgba(255, 8, 66, 0.32);
+}
+
+.parent-container .compactCard.Distancia{
+    background: rgba(10, 22, 67, 0.82); /* Gris oscuro */
+    box-shadow: 0 2px 4px rgba(13, 29, 84, 0.2), 0 4px 6px rgba(13, 29, 84, 0.32);
+}
+
+.parent-container .compactCard.Calorias{
+    background: rgba(74, 7, 146, 0.82); /* Morado oscuro */
+    box-shadow: 0 2px 4px rgba(108, 10, 179, 0.2), 0 4px 6px rgba(108, 10, 179, 0.32);
+}
+
+.parent-container .compactCard .title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.parent-container .compactCard .detail{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    gap: 1.2rem;
+}
+.parent-container .compactCard .detail .value{
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #FF990A;
+    /* color: #008900; */
+}
+/* .parent-container .compactCard .detail .variable{ 
+} */
+.parent-container .compactCard p{
+    margin-bottom: .7rem;
+    color: #bebebe;
+}
+
+.parent-container .expandedCard.Velocidad {
+    background: rgba(225, 8, 59, 0.99); /* Rojo oscuro */
+    box-shadow: 0 2px 4px rgba(255, 8, 66, 0.2), 0 4px 6px rgba(255, 8, 66, 0.32);
+}
+
+.parent-container .expandedCard.Distancia {
+    background: rgba(10, 22, 67, 0.99); /* Gris oscuro */
+    box-shadow: 0 2px 4px rgba(13, 29, 84, 0.2), 0 4px 6px rgba(13, 29, 84, 0.32);
+}
+
+.parent-container .expandedCard.Calorias {
+    background: rgba(74, 7, 146, 0.99); /* Morado oscuro */
+    box-shadow: 0 2px 4px rgba(108, 10, 179, 0.2), 0 4px 6px rgba(108, 10, 179, 0.32);
+}
+
+.parent-container .expandedCard{
+    position: absolute;
+    width: 60%;
+    height: 70vh;
+    z-index: 10;
+    left: 20%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.parent-container .expandedCard .btn-close{
+    align-self: flex-end;
+    cursor: pointer;
+}
+.parent-container .expandedCard .btn-close img{
+    width: 3rem;
+}
+.parent-container .expandedCard .title{
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 15px white;
+}
+.chartContainer{
+    width: 75%;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem;
+}
+.table .subtitle{
+    align-self: flex-start;
+    margin: 3rem 0 2rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+}

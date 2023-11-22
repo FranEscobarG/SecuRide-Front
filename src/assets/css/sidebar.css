@@ -1,0 +1,145 @@
+.flex-container{
+    min-height: 100vh;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    background-color: #22212E;
+}
+
+.sidebar{
+    width: 20%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #02031A;
+    color: #FF990A;
+    transition: all .5s;
+}
+.sidebar.closed{
+    width: 5%;
+}
+
+.sidebar .top_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+}
+.sidebar .top_section .logo{
+    width: 55%;
+    margin: 0 5% 0 10%; /* este se puede ir */
+}
+.sidebar .top_section .bx-menu{
+    padding-left: 8%;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar .link{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    padding-left: 15%;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    color: #FF990A;
+    text-decoration: none;
+    gap: 1.4rem;
+    transition: all .5s;
+}
+.sidebar .link:hover{
+    background-color: #22212E;
+    transition: all .5s;
+}
+.sidebar .link .icon img{
+    /* width: 70%; */
+    width: 50px;
+}
+.sidebar .logout{
+    margin-top: 18rem;
+}
+.active{
+    background-color: #22212E;
+}
+
+.container-page{
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #02031A;
+    color: #FF990A;
+}
+.navbar img{
+    height: 50%;
+    padding: 0 2rem 0 1rem;
+}
+
+main{
+    width: 100%;
+    /* padding: 1rem; */
+    color: white;
+}
+
+/* Estilo general del Home */
+.container-home .cover{
+    min-height: 80vh;
+    background-image: url(../img/bg-home.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 6%;
+}
+.container-home .btn-start{
+    width: 20%;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    border: 2px solid #FF990A;
+    color: #FF990A;
+    background-color: #02031ab2;
+    cursor: pointer;
+}
+
+
+
+/* DISEÑO SE ADAPTA PARA TABLET  max-1023 */
+@media screen and (min-width: 768px) and (max-width: 1374px) {
+    .sidebar{
+        width: 40%;
+        min-height: 90vh;
+    }
+    .sidebar.closed{
+        width: 9%;
+    }
+}
+
+/* DISEÑO SE ADAPTA PARA MOVIL */
+@media screen and (max-width: 767px) {
+    .sidebar{
+        position: absolute;
+        width: 75%;
+        z-index: 12;
+    }
+    .sidebar.closed{
+        width: 20%;
+    }
+}
