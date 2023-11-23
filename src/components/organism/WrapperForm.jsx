@@ -50,7 +50,7 @@ function WrapperForm() {
                 }),
             };
 
-            const response = await fetch('http://localhost:5000/create/', options);
+            const response = await fetch('https://api-securide.kmonito.com:5000/create/', options);
 
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
@@ -114,7 +114,7 @@ function WrapperForm() {
                 }),
                 // credentials: 'include',
             }
-            fetch('http://localhost:5000/login/', options) 
+            fetch('https://api-securide.kmonito.com:5000/login/', options) 
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
@@ -173,7 +173,7 @@ function WrapperForm() {
 
     const onChangeRe = () => {
         setIsValidateCaptcha(recaptcha.current.getValue())
-        console.log(recaptcha.current.getValue())
+        // console.log(recaptcha.current.getValue())
     }
 
     return ( 

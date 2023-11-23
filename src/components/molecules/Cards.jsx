@@ -8,8 +8,8 @@ function Cards() {
         {
             title: "Velocidad Promedio",
             // barValue: 75
-            value: 35,
-            var: "k/h",
+            value: 31,
+            var: "m/s",
             icon: IconSpeed,
             text: "Promedio de velocidad sobre todos tus viajes",
             series: {   // DATOS DE LA GRAFICA
@@ -20,7 +20,7 @@ function Cards() {
         {
             title: "Distancia Promedio",
             // barValue: 75
-            value: 375,
+            value: 496,
             var: "m",
             icon: IconDistance,
             text: "Distanca recorrida en promedio sobre todos tus viajes",
@@ -32,7 +32,7 @@ function Cards() {
         {
             title: "Calorias Promedio",
             // barValue: 75
-            value: 2820,
+            value: 1200,
             var: "kcal",
             icon: IconCalories,
             text: "Calorias quemadas en promedio sobre todos tus viajes",

@@ -45,21 +45,19 @@ function createData(date, velocity, distance, time, calories) {
 }
 
 const rows = [
-  createData('India', '23', 1324174, 3287, 2000),
-  createData('China', '54', 1403505, 9596, 5000),
-  createData('Italy', '12', 60483, 301, 2000),
-  createData('United States', '67', 327167, 9830, 1000),
-  createData('Canada', '30', 37603, 9984, 2200),
-  createData('Australia', '22', 25470, 7692, 600),
-  createData('Germany', '15', 83000, 357, 980),
-  createData('Ireland', '21', 4850, 70, 1300),
-  createData('Mexico', '13', 126591, 1972, 2000),
-  createData('Japan', '34', 126317, 377, 4000),
-  createData('France', '41', 67020, 649, 1000),
-  createData('United Kingdom', '45', 67545, 242, 1400),
-  createData('Russia', '37', 146794, 17098, 1800),
-  createData('Nigeria', '28', 200967, 928, 985),
-  createData('Brazil', '16', 210147, 8515, 3000),
+  createData('2023-11-19 01:55:53', '23', 13244, 3287, 2000),
+  createData('2023-11-19 01:55:53', '54', 14505, 9596, 5000),
+  createData('2023-11-19 01:55:53', '12', 483, 301, 2000),
+  createData('2023-11-19 01:55:53', '30', 303, 9984, 2200),
+  createData('2023-11-19 01:55:53', '22', 470, 7692, 600),
+  createData('2023-11-19 01:55:53', '15', 800, 357, 980),
+  createData('2023-11-19 01:55:53', '21', 450, 70, 1300),
+  createData('2023-11-22 01:55:10', '13', 591, 1972, 2000),
+  createData('2023-11-22 01:55:11', '34', 6317, 377, 4000),
+  createData('2023-11-22 01:55:12', '41', 6720, 649, 1000),
+  createData('2023-11-22 01:55:13', '37', 1794, 17098, 1800),
+  createData('2023-11-22 01:55:14', '28', 2067, 928, 985),
+  createData('2023-11-22 01:55:15', '16', 247, 8515, 3000),
 ];
 
 export default function StickyHeadTable() {
